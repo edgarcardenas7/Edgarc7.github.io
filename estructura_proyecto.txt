@@ -1,0 +1,121 @@
+.
+├── Dockerfile
+├── Gemfile
+├── Gemfile.lock
+├── README.md
+├── Rakefile
+├── app
+│   ├── assets
+│   │   ├── config
+│   │   ├── images
+│   │   └── stylesheets
+│   ├── channels
+│   │   └── application_cable
+│   ├── controllers
+│   │   ├── application_controller.rb
+│   │   ├── concerns
+│   │   └── events_controller.rb
+│   ├── helpers
+│   │   ├── application_helper.rb
+│   │   └── events_helper.rb
+│   ├── javascript
+│   │   ├── application.js
+│   │   └── controllers
+│   ├── jobs
+│   │   └── application_job.rb
+│   ├── mailers
+│   │   └── application_mailer.rb
+│   ├── models
+│   │   ├── application_record.rb
+│   │   ├── concerns
+│   │   └── event.rb
+│   └── views
+│       ├── application_view.rb
+│       ├── components
+│       ├── layouts
+│       └── pwa
+├── bin
+│   ├── brakeman
+│   ├── bundle
+│   ├── docker-entrypoint
+│   ├── importmap
+│   ├── rails
+│   ├── rake
+│   ├── rubocop
+│   └── setup
+├── config
+│   ├── application.rb
+│   ├── boot.rb
+│   ├── cable.yml
+│   ├── credentials.yml.enc
+│   ├── database.yml
+│   ├── environment.rb
+│   ├── environments
+│   │   ├── development.rb
+│   │   ├── production.rb
+│   │   └── test.rb
+│   ├── importmap.rb
+│   ├── initializers
+│   │   ├── assets.rb
+│   │   ├── content_security_policy.rb
+│   │   ├── filter_parameter_logging.rb
+│   │   ├── inflections.rb
+│   │   └── permissions_policy.rb
+│   ├── locales
+│   │   └── en.yml
+│   ├── master.key
+│   ├── puma.rb
+│   ├── routes.rb
+│   └── storage.yml
+├── config.ru
+├── db
+│   ├── migrate
+│   │   ├── 20241113015132_create_events.rb
+│   │   └── 20241113031750_adds_fields_to_events.rb
+│   ├── schema.rb
+│   └── seeds.rb
+├── estructura_proyecto.txt
+├── lib
+│   ├── assets
+│   └── tasks
+├── log
+│   └── development.log
+├── public
+│   ├── 404.html
+│   ├── 406-unsupported-browser.html
+│   ├── 422.html
+│   ├── 500.html
+│   ├── icon.png
+│   ├── icon.svg
+│   └── robots.txt
+├── storage
+│   ├── development.sqlite3
+│   └── test.sqlite3
+├── test
+│   ├── application_system_test_case.rb
+│   ├── channels
+│   │   └── application_cable
+│   ├── controllers
+│   ├── fixtures
+│   │   ├── events.yml
+│   │   └── files
+│   ├── helpers
+│   ├── integration
+│   ├── mailers
+│   ├── models
+│   │   └── event_test.rb
+│   ├── system
+│   └── test_helper.rb
+├── tmp
+│   ├── cache
+│   │   └── bootsnap
+│   ├── local_secret.txt
+│   ├── pids
+│   │   └── server.pid
+│   ├── restart.txt
+│   ├── sockets
+│   └── storage
+└── vendor
+    └── javascript
+
+52 directories, 66 files
