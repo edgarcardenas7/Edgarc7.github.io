@@ -1,7 +1,7 @@
  const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
   content: [
-    './app/views/**/*.rb',  // Esto capturará todos tus componentes Phlex
+    './app/views/**/*.rb',  
     './app/views/layouts/**/*.rb',
     './app/javascript/**/*.{js,jsx,ts,tsx}',
     './app/assets/builds/**/*.js',

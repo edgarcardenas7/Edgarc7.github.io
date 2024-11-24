@@ -3,7 +3,7 @@ class ApplicationLayout < ApplicationView
   
 	def view_template(&block)
 	  doctype
-	  
+  
 	  html do
 		head do
 		  title { "Eventz" }
@@ -11,21 +11,22 @@ class ApplicationLayout < ApplicationView
 		  unsafe_raw csrf_meta_tags
 		  unsafe_raw csp_meta_tag
   
-		  # Asegúrate de que solo incluyes estos estilos
-		  unsafe_raw stylesheet_link_tag("application", data: { turbo_track: "reload" })
-		  unsafe_raw stylesheet_link_tag("application.tailwind", data: { turbo_track: "reload" })
-		  unsafe_raw javascript_importmap_tags
+		  # Estilos y scripts con Vite
+		   vite_client_tag 
+		   vite_javascript_tag("application")
+		   vite_stylesheet_tah("application.tailwind.css"
+		    
 		end
-  
+    
 		body(class: "flex flex-col min-h-screen") do
+		  # Renderiza componentes de navegación y cabecera
 		  render NavbarComponent.new
 		  render HeaderComponent.new
-  
-		
   
 		  # Contenido principal
 		  main(class: "flex-grow container mx-auto px-4 py-8", &block)
   
+		  # Renderiza el footer
 		  render FooterComponent.new
 		end
 	  end
