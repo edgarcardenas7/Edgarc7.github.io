@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Rails y otras gemas necesarias
-gem "rails", "~> 7.2.2"
+gem "rails", "~> 8.0.0"
 gem "sprockets-rails" 
 gem "sqlite3", ">= 1.4"
 gem "puma", ">= 5.0"
