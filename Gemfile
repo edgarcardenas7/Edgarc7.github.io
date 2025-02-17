@@ -35,6 +35,6 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem "phlex-rails", "~> 1.2"
+gem "phlex-rails", "~> 2.0"
 
 # gem "tailwindcss-rails", "~> 3.0" # Esto se comenta si usas Vite para manejar Tailwind
